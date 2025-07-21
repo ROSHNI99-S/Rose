@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Place Order - The Explo Café</title>
+  <link rel="stylesheet" href="place-order.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffaf4;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #5c3d2e;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  text-decoration: underline;
+}
+
+/* Place Order Form */
+.place-order-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.place-order-section h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #5c3d2e;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #5c3d2e;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #7a4c36;
+}
+
+.confirmation-message {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .place-order-section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <main>
+    <section class="place-order-section">
+      <h2>Place Your Order</h2>
+     <form id="placeOrderForm" action="submitorder.html" method="GET">
+  <div class="form-group">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" name="fullName" required />
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required />
+  </div>
+
+  <div class="form-group">
+    <label for="address">Delivery Address</label>
+    <textarea id="address" name="address" required></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="payment">Payment Method</label>
+    <select id="payment" name="payment" required>
+      <option value="">Select</option>
+      <option value="cash">Cash on Delivery</option>
+      <option value="card">Credit/Debit Card</option>
+    </select>
+  </div>
+
+  <button type="submit">Submit Order</button>
+</form>
+
+        
+</body>
+</html>

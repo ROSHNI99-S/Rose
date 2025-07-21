@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - The Explo Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+    <script>
+        function changeText() {
+            document.getElementById("demo").innerHTML = "Thank you for submitting!";
+        }
+    </script>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="Coffee-Logo-.jpg" alt="The Explo Café Logo" />
+      <h1>The Explo Café</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+    <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="signup.html" class="btn primary">Sign Up</a>
+      <a href="order.html" class="btn primary">Order Now</a>
+    </nav>
+  </header>
+  
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Please fill out the form below to get in touch.</p>
+
+    <div class="contact-box">
+      <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button onclick="changeText()">Submit</button>
+    <p id="demo">Click on the button to submit.</p>
+
+    </form>
+    
+    <div class="contact-info">
+      <p><strong>Phone:</strong> (02) 1234 5678</p>
+      <p><strong>Email:</strong> hello@explocafe.com.au</p>
+      <p><strong>Address:</strong> 123 Brew Street, Canberra, ACT</p>
+      <p><strong>Opening Hours:</strong> Mon–Fri: 7:00 AM – 3:00 PM | Sat–Sun: Closed</p>
+    </div>
+
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.088701204214!2d149.13000931531613!3d-35.280936382939804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164dffb6c8b4cf%3A0x5c7e3c2e7fba73cb!2sCanberra%20Centre!5e0!3m2!1sen!2sau!4v1625634570111!5m2!1sen!2sau" 
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+
+
+ <footer>
+    <div class="footer-container">
+      <div class="footer-box">
+        <h4>Location</h4>
+        <p>123 Brew Street<br>Canberra, ACT</p>
+      </div>
+      <div class="footer-box">
+        <h4>Opening Hours</h4>
+        <p>Mon–Fri: 7:00am – 3:00pm<br>Sat–Sun: Closed</p>
+      </div>        
+        <div class="footer-box">
+  <h4>Connect With Us</h4>
+  <p>
+  <a href="https://www.facebook.com/YourCafePage" target="_blank">
+    <i class="fab fa-facebook-f"></i> Facebook
+  </a><br>
+  <a href="https://www.instagram.com/p/DKbGRK1xDZ4/" target="_blank">
+    <i class="fab fa-instagram"></i> Instagram
+  </a><br>
+  <a href="https://www.twitter.com/YourCafePage" target="_blank">
+    <i class="fab fa-twitter"></i> Twitter
+  </a>
+</p>
+
+</div>
+
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 Roshni Shrestha. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create New Account</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  
+
+  <section class="create-account-page">
+    <div class="create-account-box">
+      <h2>Create a New Account</h2>
+      <form id="createAccountForm">
+        <input type="text" id="newName" placeholder="Full Name" required />
+        <input type="email" id="newEmail" placeholder="Email Address" required />
+        <input type="password" id="newPassword" placeholder="Password" required />
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+        <button type="submit">Create Account</button>
+        <p id="account-message" class="message"></p>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("createAccountForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const password = document.getElementById("newPassword").value;
+      const confirm = document.getElementById("confirmPassword").value;
+      const message = document.getElementById("account-message");
+
+      if (password !== confirm) {
+        message.textContent = "Passwords do not match!";
+        message.style.color = "red";
+      } else {
+        message.textContent = "Account created successfully!";
+        message.style.color = "green";
+      }
+    });
+  </script>
+  <footer>
+    <div class="footer-container">
+      
+    </div>
+    <div class="footer-bottom">&copy; 2025 Roshni Shrestha. All rights reserved.</div>
+  </footer>
+</body>
+</html>

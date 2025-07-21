@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dine in Comfort - The Explo Café</title>
+  <link rel="stylesheet" href="dineincomfort.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffaf4;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #5c3d2e;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-small.jpg') center center/cover no-repeat;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  background-color: rgba(255,255,255,0.85);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #5c3d2e;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+}
+
+/* Comfort Info Section */
+.comfort-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.comfort-info .content {
+  flex: 1 1 50%;
+}
+
+.comfort-info .image {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.comfort-info .image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.comfort-info h2 {
+  font-family: 'Playfair Display', serif;
+  color: #5c3d2e;
+  font-size: 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #5c3d2e;
+  color: white;
+  padding: 2rem 1rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-box {
+  flex: 1 1 250px;
+}
+
+.footer-box h4 {
+  margin-bottom: 10px;
+}
+
+.footer-box a {
+  color: #ffd;
+  text-decoration: none;
+}
+
+.footer-box a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .comfort-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.service:hover {
+  background-color: #f9f5f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Dine in Comfort</h1>
+      <p>Experience warmth, elegance, and cozy vibes at The Explo Café.</p>
+    </div>
+  </section>
+
+  <section class="comfort-info">
+    <div class="content">
+      <h2>Cozy, Inviting Ambiance</h2>
+      <p>Whether you're catching up with friends, working remotely, or enjoying some alone time, our café offers comfortable seating, soft lighting, and a peaceful atmosphere to make your visit special.</p>
+      <p>We welcome you to relax with a warm cup of coffee and unwind.</p>
+    </div>
+    
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <h4>Location</h4>
+        <p>123 Brew Street, Canberra, ACT</p>
+      </div>
+      <div class="footer-box">
+        <h4>Opening Hours</h4>
+        <p>Mon–Fri: 7am – 6pm<br>Sat–Sun: 8am – 4pm</p>
+      </div>
+      <div class="footer-box">
+        <h4>Follow Us</h4>
+        <a href="#">Facebook</a> | <a href="#">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Roshni Shrestha . All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

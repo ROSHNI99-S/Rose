@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services - The Explo Café</title>
+  <link rel="stylesheet" href="services.css" />
+  <style>
+    /* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffdf9;
+  color: #333;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 2px solid #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  height: 60px;
+}
+
+.logo-container h1 {
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #5c3d2e;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5c3d2e;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 8px 14px;
+  background-color: transparent;
+  border: 2px solid #5c3d2e;
+  border-radius: 5px;
+  color: #5c3d2e;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #5c3d2e;
+  color: #fff;
+}
+
+.btn.primary {
+  background-color: #5c3d2e;
+  color: white;
+}
+
+.services-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.services-section h1 {
+  text-align: center;
+  color: #5c3d2e;
+  margin-bottom: 2rem;
+}
+
+.service {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.service h2 {
+  color: #5c3d2e;
+  margin-bottom: 0.5rem;
+}
+
+.service p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+/* Footer */
+footer {
+  background-color: #5c3d2e;
+  color: white;
+  padding: 2rem 1rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 950px;
+  margin: auto;
+  gap: 40px;
+}
+
+.footer-box {
+  flex: 1 1 250px;
+}
+
+.footer-box h4 {
+  margin-bottom: 10px;
+}
+
+.footer-box a {
+  color: #ffd;
+  text-decoration: none;
+}
+
+.footer-box a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="Coffee-Logo-.jpg" alt="The Explo Café Logo" />
+      <h1>The Explo Café</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="signup.html" class="btn primary">Sign Up</a>
+      <a href="order.html" class="btn primary">Order Now</a>
+      
+    </nav>
+  </header>
+
+
+  <main class="services-section">
+    <h1>Our Services</h1>
+<a href="diveincomfort.html" style="text-decoration: none; color: inherit;">
+  <section class="service">
+    <h2>Dine-In Comfort</h2>
+    <p>Enjoy your meal in our cozy, welcoming space. Perfect for catching up with friends or relaxing solo.</p>
+  </section>
+</a>
+
+
+    <a href="takeaway.html" style="text-decoration: none; color: inherit;">
+  <section class="service">
+    <h2>Takeaway Options</h2>
+    <p>On the go? Grab your favourite coffee or meal and take The Explo Café with you.</p>
+  </section>
+</a>
+
+
+<a href="cattering.html" style="text-decoration: none; color: inherit;">
+    <section class="service">
+      <h2>Catering Services</h2>
+      <p>Hosting an event? Let us take care of the food. From office meetings to birthdays, our menu options will keep your guests happy.</p>
+    </section>
+
+    <a href="community-events.html" style="text-decoration: none; color: inherit;">
+  <section class="service">
+    <h2>Community Events</h2>
+    <p>Discover the exciting local events happening at our café.</p>
+  </section>
+</a>
+
+
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-box">
+        <h4>Location</h4>
+        <p>123 Brew Street<br>Canberra, ACT</p>
+      </div>
+      <div class="footer-box">
+        <h4>Opening Hours</h4>
+        <p>Mon–Fri: 7:00am – 3:00pm<br>Sat–Sun: Closed</p>
+      </div>        
+        <div class="footer-box">
+  <h4>Connect With Us</h4>
+  <p>
+  <a href="https://www.facebook.com/YourCafePage" target="_blank">
+    <i class="fab fa-facebook-f"></i> Facebook
+  </a><br>
+  <a href="https://www.instagram.com/p/DKbGRK1xDZ4/" target="_blank">
+    <i class="fab fa-instagram"></i> Instagram
+  </a><br>
+  <a href="https://www.twitter.com/YourCafePage" target="_blank">
+    <i class="fab fa-twitter"></i> Twitter
+  </a>
+</p>
+</div>
+
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 Roshni Shrestha. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
